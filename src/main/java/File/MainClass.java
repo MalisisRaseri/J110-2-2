@@ -12,10 +12,13 @@ public class MainClass {
 
 
        File[] files = {fileDoc, map, multimedia, video};
+       fileDoc.print();
+       map.print();
+       multimedia.print();
+       video.print();
 
        printAll(files);
-       printAll(fileDoc);
-       printAll(video);
+
 
 
         /*

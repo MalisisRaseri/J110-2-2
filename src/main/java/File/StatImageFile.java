@@ -39,5 +39,14 @@ public class StatImageFile extends File{
         setHeight(height);
     }
 
+    @Override
+    public String toString() {
+        return name + "            " +  size + "      " + format + ", " + width + "x" + height;
+
+    }
+
+    public void print(){
+        System.out.println(toString());
+    }
 
 }

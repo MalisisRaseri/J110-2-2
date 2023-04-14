@@ -48,4 +48,15 @@ public class MultimediaFile extends File{
     }
 
 
+    @Override
+    public String toString() {
+        return name + "      " +  size + "      " + format + ", " + description + ", " + getDurationToString();
+
+    }
+
+    public void print(){
+        System.out.println(toString());
+    }
+
+
 }

@@ -29,7 +29,14 @@ public class VideoFile extends MultimediaFile{
         setHeight(height);
     }
 
+    @Override
+    public String toString() {
+        return name + "  " +  size + "    " + format + ", " + description + ", " + getDurationToString() + " " +  width + "x" + height;
+    }
 
+    public void print(){
+        System.out.println(toString());
+    }
 
 }
 

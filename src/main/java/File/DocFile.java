@@ -1,6 +1,9 @@
 package File;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class DocFile extends File {
+
     String format;
     int numberOfPages;
 
@@ -26,6 +29,16 @@ public class DocFile extends File {
         super(name, size);
         setFormat(format);
         setNumberOfPages(numberOfPages);
+
+    }
+
+    @Override
+    public String toString() {
+        return name + "     " +  size + "      " + format + ", " + numberOfPages + " " + "pages";
+    }
+
+    public void print(){
+        System.out.println(toString());
     }
 
 }
